@@ -1,17 +1,63 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+import "./style.css";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const App = function () {
+  const [meaning, setMeaning] = useState("");
+  const foodDictionary = {
+    "🥓": "Bacoon",
+    "🍔": "Hamburger",
+    "🍟": "french-fries",
+    "🍕": "Pizza",
+    "🌭": "Hot Dog",
+    "🥪": "sandwich",
+    "🌮": "Taco",
+    "🌯": "Burrito",
+  };
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+  var foodWeHave = Object.keys(foodDictionary);
+
+  //function for handling user input emojis
+
+  function foodInputHandler(e) {
+    console.log(e.target.value);
+    var userInput = e.target.value;
+
+    var meaning = foodDictionary[userInput];
+    // console.log(meaning);
+
+    if (meaning === undefined) {
+      meaning = "we dont have this in a database";
+    }
+    setMeaning(meaning);
+  }
+
+  //function for handling already used emojis
+
+  function foodClickhandler(food) {
+    // console.log(emoji);
+    var meaning = foodDictionary[food];
+    setMeaning(meaning);
+  }
+
+  return (
+    <div className="container container-center">
+      <h1> Junkyys !</h1>
+
+      <input onChange={foodInputHandler}></input>
+      <h2 className="meaningBox">What's This?:{meaning}</h2>
+
+      <h3>FastFood we have</h3>
+
+      {foodWeHave.map(function (food) {
+        return (
+          <div class="display">
+            <span onClick={() => foodClickhandler(food)}>{food}</span>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+ReactDOM.render(<App />, document.querySelector("#root"));
