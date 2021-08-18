@@ -13,6 +13,13 @@ const App = function () {
     "🥪": "sandwich",
     "🌮": "Taco",
     "🌯": "Burrito",
+    "🌰" : "chestnut",
+    "🍗" : "Poultry Leg",
+    "🍤" : "Fried Shrimp",
+    "🍪" :"Cookie",
+    "🍩" : "Doughnut",
+    "🥯" :  "Bage",
+    "🥞": "Pancakes"
   };
 
   var foodWeHave = Object.keys(foodDictionary);
