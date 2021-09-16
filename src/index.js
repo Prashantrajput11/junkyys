@@ -77,7 +77,7 @@ const App = function () {
           ></a>
         </li>
         <li>
-          <a href="https://github.com/Prashantrajput11"
+          <a href="https://github.com/Prashantrajput11/junkyys"
             >Github<i class="icons fab fa-github"></i
           ></a>
         </li>
