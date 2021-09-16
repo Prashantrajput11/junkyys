@@ -63,7 +63,8 @@ const App = function () {
           </div>
         );
       })}
-      <footer>
+     <div>
+     <footer>
       <ul class="social">
         <li>
           <a href="https://twitter.com/code_prash"
@@ -82,7 +83,9 @@ const App = function () {
         </li>
       </ul>
       </footer>
+     </div>
     </div>
+    
   );
 };
 
