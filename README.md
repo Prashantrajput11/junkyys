@@ -1,3 +1,12 @@
+# junkyys
+
+a fast food interpretor app that lets you know which junk food it is
+
+
+# screenshots
+![image](https://user-images.githubusercontent.com/69415658/133553133-5a480e79-2f27-4786-a320-86cce8ea40a0.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
