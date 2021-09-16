@@ -46,3 +46,21 @@ input {
   padding: 0.8rem;
   font-size: 28px;
 }
+.social {
+  display: flex;
+  justify-content: space-around;
+  padding: 18px;
+}
+.social li {
+  list-style: none;
+  font-size: 12px;
+}
+.social li a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+.icons {
+  color: white;
+  font-size: 12px;
+}
