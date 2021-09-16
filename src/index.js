@@ -63,6 +63,9 @@ const App = function () {
           </div>
         );
       })}
+      <footer>
+        <p>made with</p>
+      </footer>
     </div>
   );
 };
