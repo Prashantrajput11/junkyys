@@ -22,28 +22,31 @@ const App = function () {
     "🥞": "Pancakes"
   };
 
-  var foodWeHave = Object.keys(foodDictionary);
+  let  foodWeHave = Object.keys(foodDictionary);
 
   //function for handling user input emojis
 
-  function foodInputHandler(e) {
-    console.log(e.target.value);
-    var userInput = e.target.value;
+  let foodInputHandler = e =>{
+    
+    let userInput = e.target.value;
 
-    var meaning = foodDictionary[userInput];
-    // console.log(meaning);
+    let meaning = foodDictionary[userInput];
 
+    // If meaning is undefined
     if (meaning === undefined) {
       meaning = "we dont have this in a database";
     }
+    // Update meaning
     setMeaning(meaning);
   }
 
   //function for handling already used emojis
 
-  function foodClickhandler(food) {
-    // console.log(emoji);
-    var meaning = foodDictionary[food];
+  let foodClickhandler = food =>  {
+
+    let meaning = foodDictionary[food];
+
+    // Update meaning
     setMeaning(meaning);
   }
 
@@ -52,17 +55,19 @@ const App = function () {
       <h1> Junkyys !</h1>
 
       <input onChange={foodInputHandler}></input>
-      <h2 className="meaningBox">What's This?:{meaning}</h2>
+      <h2 className="meaningBox">What's This?: {meaning}</h2>
 
       <h3>FastFood we have</h3>
 
-      {foodWeHave.map(function (food) {
+      {
+      foodWeHave.map(food => {
         return (
           <div class="display">
             <span onClick={() => foodClickhandler(food)}>{food}</span>
           </div>
         );
-      })}
+      })
+      }
      <div>
      <footer>
       <ul class="social">
