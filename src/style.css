@@ -1,67 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 body {
-  font-family: "Lobster", cursive;
+	font-family: "Lobster", cursive;
 }
 .container {
-  /* border:1px solid red; */
-  display: block;
-  margin: auto;
-  height: 70vh;
-  background: lightblue;
+	/* border:1px solid red; */
+	display: block;
+	margin: auto;
+	height: 70vh;
+	background: lightblue;
 }
 .container-center {
-  max-width: 600px;
+	max-width: 600px;
 }
-h1 {
-  text-align: center;
-}
+
 h3 {
-  text-align: center;
+	text-align: center;
 }
 input {
-  display: block;
-  margin: 20px auto;
+	display: block;
+	margin: 20px auto;
 }
 .meaningBox {
-  height: 80px;
-  width: 80%;
-  border: 3px solid blue;
-  background: white;
-  border-radius: 10px;
-  text-align: center;
-  margin:auto;
- 
+	height: 80px;
+	width: 80%;
+	border: 3px solid blue;
+	background: white;
+	border-radius: 10px;
+	text-align: center;
+	margin: auto;
 }
 
 .display {
-  display: inline-block;
+	display: inline-block;
 
-  /* border:1px solid blue; */
-  cursor: pointer;
-  padding: 0.8rem;
-  font-size: 28px;
+	/* border:1px solid blue; */
+	cursor: pointer;
+	padding: 0.8rem;
+	font-size: 28px;
 }
 .social {
-  display: flex;
-  justify-content: space-around;
-  padding: 18px;
-  background-color: black;
+	display: flex;
+	justify-content: space-around;
+	padding: 18px;
+	background-color: black;
 }
 .social li {
-  list-style: none;
-  font-size: 12px;
+	list-style: none;
+	font-size: 12px;
 }
 .social li a {
-  text-decoration: none;
-  color: white;
-  font-size: 12px;
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
 }
 .icons {
-  color: white;
-  font-size: 12px;
+	color: white;
+	font-size: 12px;
 }
